@@ -378,6 +378,10 @@ section.first-sec {
     background-image: url(./assests/images/Woman.webp);
     background-size: cover;
     background-repeat: no-repeat;
+
+    a {
+        color: black;
+    }
 }
 
 
@@ -565,6 +569,10 @@ section.first-sec {
         margin-bottom: 32px;
     }
 
+    a {
+        color: black;
+    }
+
     span {
         font-family: GoogleSans-Bold;
         padding: 12px 24px;
@@ -578,6 +586,7 @@ section.first-sec {
         }
     }
 }
+
 
 
 .s24, .Pixel8pro {
