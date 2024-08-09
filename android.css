@@ -1,0 +1,681 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+}
+
+@font-face {
+    font-family: GoogleSans-Bold;
+    src: url('./assests/fonts/GoogleSans-Bold.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: GoogleSans-Medium;
+    src: url('./assests/fonts/GoogleSans-Medium.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: GoogleSans-Regular;
+    src: url('./assests/fonts/GoogleSans-Regular.woff2') format('woff2');
+}
+
+a {
+    text-decoration: none;
+}
+
+
+header.header {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    border-radius: 0 0 20px 20px;
+    
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    
+    .head {
+        display: flex;
+        align-items: center;
+        margin: 0 108px
+    }
+}
+
+.logo {
+    height: 88px;
+    width: 110px;
+    display: flex;
+    align-items: center;
+
+    img {
+        height: 18px;
+        width: 110px;
+    }
+}
+
+nav {
+    margin-left: 320px;
+
+    ul{
+        display: flex;
+        font-weight: 600;
+        width: 525.59px;
+    }
+
+    button {
+        border: none;
+        width: 175.34px;
+        height: 88px;
+        background-color: white;
+        font-family: GoogleSans-Medium;
+        font-size: 16px;
+    }
+
+    #opt-one, #opt-two, #opt-three{
+        border: none;
+        width: 20px;
+    }
+}
+
+
+
+.icon {
+    margin-left: 50px;
+    width: 40px;
+}
+
+.shop {
+    margin-left: 40px;
+    width: 158.34px;
+
+    button {
+        height: 48px;
+        width: 182.21px;
+        border: 1px solid black;
+        padding: 12px 24px;
+        border-radius: 30px;
+        background-color: black;
+        color: white;
+
+        .phone {
+            font-size: 16px;
+            font-family: GoogleSans-Bold;
+        }
+
+        i {
+            margin-left: 5px;
+            color: #c6ff00;
+        }
+    }
+}
+
+
+section.first-sec {
+    display: flex;
+    padding: 60px 0;
+    width: 100%;
+    height: 746px;
+
+    background-image: url(./assests/images/Background.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+
+.page {
+    margin: 0 108px;
+    display: flex;
+    align-items: center;
+    width: 1280px;
+}
+
+.image {
+    margin-left: 10%;
+    margin-bottom: 190px;
+    width: 50%;
+    height: 192px;
+
+    h1 {
+        font-size: 56px;
+        margin-bottom: 30px;
+        font-family: GoogleSans-Bold;
+    }
+
+}  
+
+.flip6 {
+    margin: 16px 0px;
+}
+
+.flip6, .fold6 {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    font-family: GoogleSans-Bold;
+    
+    border: 1px solid black;
+    border-radius: 30px;
+    color: black;
+    padding: 12px 24px;
+    width: 267.1px;
+    height: 48px;
+    overflow: hidden;
+    background-color: none;
+    transition: background-color 0.5s ease;
+}
+
+.flip, .fold {
+    position: relative;
+    z-index: 1;
+    color: black;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    /* Start from the left of the element */
+    width: 100%;
+    height: 100%;
+    background-color: #dadce0;
+    /* Final color */   
+    transition: left 0.5s ease;
+    /* Move to the left edge of the element with 1-second delay */
+    z-index: 0;
+    /* Ensure overlay is behind the content */
+}
+
+
+.flip6:hover .overlay, .fold6:hover .overlay {
+    left: 0;
+}
+
+
+.page video{
+    width: 626px;
+    height: 626px;
+}
+
+.android {
+    width: 100%;
+    height: 168px;
+    text-align: center;
+
+    video {
+    width: 156px;
+    height: 88.07px;
+    }
+}
+
+.second-sec, .third-sec, .fourth-sec, .sixth-sec, .seventh-sec {
+    width: 1496px;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+}
+
+.wrap {
+    position: relative;
+    overflow: hidden;
+    width: 1280px;
+    height: 720px;
+    display: flex;
+    align-items: center;
+    border-radius: 40px;
+}
+
+#back-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1280px;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.content2 {
+    width: 1062px;
+    height: 347.2px;
+    left: 95px;
+    bottom: 200px;
+
+    h1 {
+        color: white;
+        font-family: GoogleSans-Bold;
+        font-size: 56px;
+        margin-bottom: 32px;
+        width: 400px;
+        height: 192px;
+    }
+    
+    .btn {
+        font-family: GoogleSans-Bold;
+        font-size: 16px;
+    
+        a {
+            color: black;
+        }
+    }
+    
+    #game {
+        border-radius: 40px;
+        display: block;
+        width: 151.04px;
+        height: 48px;
+        padding: 12px 24px;
+        background-color: white;
+        margin-bottom: 20px;
+    
+        i {
+            margin-left: 10px;
+        }
+    }
+
+    #hype {
+        border-radius: 40px;
+        display: block;
+        width: 163.66px;
+        height: 48px;
+        padding: 12px 24px;
+        background-color: #b7b7b4;
+    
+        i {
+            margin-left: 5px;
+        }
+    }
+}
+
+
+
+
+.content2, .content3, .content4, .content5, .content6, .content7 {
+    position: absolute;
+    z-index: 1;
+    font-family: GoogleSans-Bold;
+
+}
+
+.content3 {
+    width: 626px;
+    height: 321.6px;
+    left: 110px;
+
+    h1 {
+        font-size: 72px;
+        color: white;
+        margin-bottom: 25px;
+        width: 100%;
+    }
+
+    span {
+        padding: 12px 24px;
+        background-color: rgba(255, 255, 255, 0.5);
+        color: black;
+        border-radius: 40px;
+    }
+}
+
+.content4 {
+    width: 626px;
+    height: 321.6px;
+    left: 110px;
+
+    h1 {
+        font-size: 72px;
+        margin-bottom: 20px;
+    }
+
+    span {
+        padding: 12px 24px;
+        background-color: black;
+        color: white;
+        border-radius: 40px;
+
+        i {
+            color: #c6ff00;
+        }
+    }
+}
+
+
+
+.content5 {
+    width: 398px;
+    height: 128px;
+    left: 80px;
+
+    h1 {
+        font-size: 56px;
+        margin-bottom: 40px;
+        color: white;
+
+    }
+
+    span {
+        padding: 12px 24px;
+        background-color: rgba(255, 255, 255, 0.5);
+        border-radius: 40px;
+        color: black;
+    }
+}
+
+.fifth-sec {
+    display: flex;
+    justify-content: center;
+    width: 1496px;
+    height: 800px;
+}
+
+.back-image {
+    position: relative;
+    width: 1280px;
+    height: 720px;
+    display: flex;
+    align-items: center;
+    border-radius: 40px;
+    background-image: url(./assests/images/Woman.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+
+
+#man {
+    position: absolute;
+    border-radius: 400px;
+    width: 517px;
+    height: 585.53px;
+    right: 100px;
+
+    .perfect {
+        display: flex;
+        justify-content: space-between;
+        width: 517px;
+        height: 236px;
+        padding: 30px;
+        background-color: white;
+        border-radius: 40px 40px 0 0;
+    }
+
+    img {
+        width: 517px;
+        height: 349.53px;
+        border-radius: 0 0 40px 40px;
+    }
+}
+
+.Edit {
+
+    width: 319.9px;
+    height: 176px;
+    
+    p {
+        font-family: GoogleSans-Medium;
+        margin-bottom: 16px;
+        font-size: 16px;
+    }
+    
+    h3 {
+        font-size: 32px;
+        font-family: GoogleSans-Bold;
+        height: 126px;
+        width: 319.9px;
+        margin-bottom: 16px;
+    }
+}
+
+.plus {
+    width: 48px;
+    height: 176px;
+
+    button {
+        width: 48px;
+        background-color: white;
+        border: 1px solid black;
+        border-radius: 50%;
+        height: 48px;
+
+        /* i {
+            height: 20px;
+            width: 20px;
+        } */
+    }
+}
+
+.content6 {
+    width: 626px;
+    height: 321.6px;
+    font-family: GoogleSans-Medium;
+    left: 110px;
+
+    h1 {
+        font-size: 70px;
+        margin-bottom: 25px;
+    }
+
+    span {
+        
+        background-color: black;
+        padding: 12px 24px;
+        font-size: 16px;
+        border-radius: 40px;
+        color: white;
+        width: 263.25px;
+        height: 48px;
+
+        i {
+            color: #c6ff00;
+        }
+    }
+}
+
+
+.content7 {
+    width: 626px;
+    height: 241.6px;
+    left: 110px;
+    font-family: GoogleSans-Medium;
+    color: white;
+    gap: 20px;
+
+    h1 {
+        font-size: 72px;
+        margin-bottom: 30px;
+    }
+
+    span {
+        background-color: black;
+        color: white;
+        padding: 12px 24px;
+        border-radius: 40px;
+        font-size: 16px;
+        width: 171.49px;
+        height: 48px;
+
+        i {
+            color: #c6ff00;
+        }
+    }
+}
+
+.new {
+    margin: 0 108px;
+    text-align: center;
+    height: 140px;
+    
+    h2 {
+        font-family: GoogleSans-Medium;
+        font-size: 56px;
+        margin-bottom: 16px;
+    }
+}
+
+.phones-sales {
+    /* display: flex;
+    justify-content: center; */
+    height: 1300px;
+    width: 855.55px;
+
+    ul {
+        
+
+        li {
+            width: 374.46px;
+            width: 411.78px;
+            padding: 24px;
+        }
+    }
+
+}
+
+.phone-pic img{
+    width: 326px;
+    height: 183.38px;
+    margin-bottom: 24px;
+}
+
+.row1, .row2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.zflip, .zfold, .s24, .Pixel8pro, .Pixelfold, .Pixel8a {
+    text-align: center;
+    height: 411.78px;
+    width: 374.45px;
+    border-radius: 40px;
+    background-color: #e8f0fe;
+    padding: 24px;
+    margin-left: 30px;
+    
+    h3 {
+        font-family: GoogleSans-Bold;
+        font-size: 24px;
+        height: 30px;
+        margin-bottom: 16px;
+    }
+
+    p {
+        font-family: GoogleSans-Regular;
+        font-size: 16px;
+        margin-bottom: 32px;
+    }
+
+    span {
+        font-family: GoogleSans-Bold;
+        padding: 12px 24px;
+        width: 147.63px;
+        height: 48px;
+        border: 1px solid black;
+        border-radius: 40px;
+
+        i {
+            margin-left: 20px;
+        }
+    }
+}
+
+
+.s24, .Pixel8pro {
+    width: 475.09px;
+}
+
+.zfold {
+    background-color: #f1f3f4;
+}
+
+.s24, .Pixelfold{
+    background-color: #fef8e9;
+}
+
+.Pixel8pro {
+    background-color: #e2f2ff;
+}
+
+.Pixel8a {
+    background-color: #ebf9e5;
+}
+
+
+.see-all {
+    width: 1496px;
+    height: 89.6px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 70px;
+    
+    span {
+        position: absolute;
+        top: 40px;
+        padding: 12px 24px;
+        color: white;
+        background-color: black;
+        width: 193.6px;
+        height: 48px;
+        text-align: center;
+        border-radius: 40px;
+        font-family: GoogleSans-Bold;
+
+        i {
+            margin-left: 10px;
+            color: #c6ff00;
+        }
+    }
+}
+
+section.find {
+    width: 100%;
+    height: 730px;
+    background-color: #e8f5e9;
+    border-radius: 40px;
+}
+
+div.find-in {
+    margin: 0 108px 104px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+div.find-content {
+    width: 517px;
+    height: 246.4px;
+    margin-left: 140px;
+
+    p {
+        font-family: GoogleSans-Regular;
+        font-size: 16px;
+        margin-bottom: 16px;
+    }
+
+    h3 {
+        font-family: GoogleSans-Medium;
+        font-size: 32px;
+        margin-bottom: 40px;
+        width: 517px;
+        height: 120px;
+    }
+
+    span {
+        padding: 12px 24px;
+        font-family: GoogleSans-Bold;
+        color: white;
+        border-radius: 40px;
+        background-color: black;
+
+        i {
+            color: #c6ff00;
+        }
+    }
+}
+
+.find-in video {
+    width: 626px;
+    height: 626px;
+}
